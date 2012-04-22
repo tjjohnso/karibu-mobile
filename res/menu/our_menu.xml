@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+       android:title="Main"
+       android:id="@+id/main_list" />    
+    <item 
+       android:title="Post one"
+       android:id="@+id/post" />    
+    <item 
+       android:title="Settings"
+       android:id="@+id/preferences" />    
+    <item 
+       android:title="Current Location"
+       android:id="@+id/cur_loc" />
+    <item 
+       android:title="About Us"
+       android:id="@+id/aboutUs" />
+    <item 
+       android:title="Exit"
+       android:id="@+id/exit" />    
+
+</menu>

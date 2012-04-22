@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    >
+	
+		<Button
+		    android:id="@+id/post_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignRight="@+id/textview_details"
+		    android:text="Post" />
+		
+	    <TextView
+	        android:id="@+id/textview_overview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Overview" 
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/post_button"/>
+	
+	    <EditText
+	        android:id="@+id/post_overview"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:scrollbars="vertical" 
+	        android:text="" 
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textview_overview"/>
+	
+	    <TextView
+	        android:id="@+id/textview_details"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Details"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:layout_alignParentLeft="true" 
+	        android:layout_below="@+id/post_overview"/>
+	
+	    <EditText
+	        android:id="@+id/post_details"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:inputType="textMultiLine" 
+	        android:minLines="3"
+	        android:text=""
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textview_details" />
+	    
+		<TextView
+		    android:id="@+id/begindate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Start Date" 
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/post_details" />
+	
+		<DatePicker
+		    android:id="@+id/post_begindate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/begindate"/>
+	
+	 	<TextView
+		    android:id="@+id/enddate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="End Date"
+		    android:textAppearance="?android:attr/textAppearanceLarge" 
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/post_begindate"/>
+		
+	
+		<DatePicker
+		    android:id="@+id/post_enddate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/enddate"/> 
+	</RelativeLayout>
+</ScrollView>

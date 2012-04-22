@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:apiKey="0vwbx-kAGEv3zxkJc2El60Yl1xshz2xRLm3jwgw"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hello_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textSize="23dp" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.57"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.48" >
+
+        </ListView>
+
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.75" />
+
+<!--         <Button
+            android:id="@+id/viewMap"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="View My Location" /> -->
+    </LinearLayout>
+
+ 
+</FrameLayout>

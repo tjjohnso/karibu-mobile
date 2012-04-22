@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="updateDistance">
+        <item name="1">1 mile</item>
+        <item name="2">2 miles</item>
+        <item name="3">3 miles</item>
+        <item name="4">4 miles</item>
+        <item name="5">> 5 miles</item>
+    </string-array>
+    
+    <string-array name="updateDistanceValues">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+    </string-array>
+    
+    <string-array name="selectedCategoriesDefaultEntries">
+        <item name="all">All</item>
+        <item name="food">Food</item>
+        <item name="Cosmetics">Cosmetics</item>
+        <item name="clothes">Clothes</item>
+        <item name="stationery">Stationery</item>
+        <item name="groceries">Groceries</item>
+        <item name="movies">Movies</item>
+        <item name="electronics">Electronics</item>
+        <item name="footwear">Footwear</item>
+        <item name="academic">Academic</item>
+    </string-array>
+    <string-array name="selectedCategoriesDefaultValues">
+        <item name="all">#ALL#</item>
+        <item name="food">0</item>
+        <item name="Cosmetics">1</item>
+        <item name="clothes">2</item>
+        <item name="stationery">3</item>
+        <item name="groceries">4</item>
+        <item name="movies">5</item>
+        <item name="electronics">6</item>
+        <item name="footwear">7</item>
+        <item name="academic">8</item>
+    </string-array>
+</resources>

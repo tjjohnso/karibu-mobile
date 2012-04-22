@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:threefiftyprefs="http://schemas.android.com/apk/res/org.karibu">	
+    >
+
+    <PreferenceCategory 
+        android:title="Categories"
+        android:key="cate_settings">
+        
+        <CheckBoxPreference 
+            android:key="enable_msg"
+            android:summary="Enable or disable all messages updates"
+            android:title="Enalbe Messages" 
+            android:defaultValue="true"
+        />
+        <org.karibu.ListPreferenceMultiSelect 
+			android:defaultValue="#ALL#"
+		    android:key="enable_cates"
+		    android:title="Select Categories" 
+            android:summary="Select specific categories you want to receive messages updates"
+			threefiftyprefs:checkAll="check" threefiftyprefs:separator="|" 
+            android:entries="@array/selectedCategoriesDefaultEntries"
+            android:entryValues="@array/selectedCategoriesDefaultValues"
+            android:dependency="enable_msg"
+	    />
+            
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        android:title="Personalized"
+        android:key="personalized"
+        >
+
+        <EditTextPreference
+            android:key="welcome_message"
+            android:title="Welcome Message" 
+            android:summary="Define the Welcome message to be shown"
+            android:dialogTitle="Welcome Message"
+            android:dialogMessage="Provide a message"    
+            android:defaultValue="Default welcome message" 
+            android:dependency="enable_msg"
+            />
+		 
+		 <ListPreference 
+            android:key="distance"
+            android:title="Distance"
+            android:summary="Define the distance within which you want to receive messages"
+            android:entries="@array/updateDistance"
+            android:entryValues="@array/updateDistanceValues"
+            android:defaultValue="3" 
+            android:dependency="enable_msg"
+        /> 
+
+		<PreferenceScreen
+            android:dependency="enable_msg"
+		    android:key="time_range"
+		    android:summary="When you want to receive messages"
+		    android:title="Time Range" >
+
+		    <org.karibu.TimePreference
+		        android:key="time_range_from"
+		        android:title="From"
+		        android:summary="When you want to receive messages"
+				threefiftyprefs:hour="09" threefiftyprefs:min="00" 
+		    />
+		    <org.karibu.TimePreference2
+		        android:key="time_range_to"
+		        android:title="To"
+		        android:summary="When you want to receive messages"
+				threefiftyprefs:hour="17" threefiftyprefs:min="00" 
+		    />
+<!-- 		    <TimePicker
+			    android:id="@+id/rcvmsg_begintime"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+		    <TimePicker
+			    android:id="@+id/rcvmsg_endtime"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" /> -->
+		</PreferenceScreen>
+
+    </PreferenceCategory>
+    
+</PreferenceScreen>

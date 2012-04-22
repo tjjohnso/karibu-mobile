@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:apiKey="0s3RQjT04OE52TT6p_QZcSMRdVrIknfdgrYHEtA"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <TextView
+        android:id="@+id/announcer"
+        android:layout_width="fill_parent"
+        android:layout_height="36px"
+        android:layout_alignLeft="@+id/mapView"
+        android:layout_alignRight="@+id/mapView"
+        android:layout_below="@+id/mapView"
+        android:paddingTop="5px"
+        android:text="" 
+        android:textSize="25px"/>
+
+    <TextView 
+        android:id="@+id/_overview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/announcer"
+        android:layout_alignRight="@+id/announcer"
+        android:layout_below="@+id/announcer"
+        android:paddingTop="5px"
+        android:text="OverView" 
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="fill_parent"
+        android:layout_height="36px"
+        android:layout_alignLeft="@+id/_overview"
+        android:layout_alignRight="@+id/_overview"
+        android:layout_below="@+id/_overview"
+        android:paddingTop="5px"
+        android:text="" 
+        android:textSize="24px" />
+
+    <TextView 
+        android:id="@+id/_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/overview"
+        android:layout_alignRight="@+id/overview"
+        android:layout_below="@+id/overview"
+        android:paddingTop="5px"
+        android:text="Details" 
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/_details"
+        android:layout_alignRight="@+id/_details"
+        android:layout_below="@+id/_details"
+        android:text="" 
+        android:textSize="24px" />
+
+
+</RelativeLayout>
