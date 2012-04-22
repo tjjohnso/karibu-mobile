@@ -1,0 +1,1 @@
+Karibu is a Location-Based Announcement application. This is the mobile client code. 
